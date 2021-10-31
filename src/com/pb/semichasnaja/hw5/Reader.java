@@ -93,7 +93,7 @@ public class Reader {
     }
 
     public void returnBook(Book... Books) {
-        System.out.print (fullNameReader + " взял книги: ");
+        System.out.print (fullNameReader + " вернул книги: ");
         for(int i = 0; i < (Books.length-1); i++) {
             System.out.print(Books[i].getInfoBook() + ", ");
         }
