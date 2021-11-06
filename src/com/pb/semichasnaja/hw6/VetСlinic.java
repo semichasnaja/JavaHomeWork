@@ -10,8 +10,8 @@ public class VetСlinic {
 
         Animal[] arrayAnimals = new Animal[] {dog1, cat1, horse1};
         Class clazz = Class.forName("hw6.Veterinarian");
-        Constructor constr = clazz.getConstructor(new Class[] {String.class});
-        Object obj = constr.newInstance("Ветеринар");
+        Constructor constr = clazz.getConstructor(new Class[] {});
+        Object obj = constr.newInstance();
         if (obj instanceof Veterinarian) {
             for (int i = 0; i < arrayAnimals.length; i++) {
                 ((Veterinarian) obj).treatAnimal(arrayAnimals[i]);
