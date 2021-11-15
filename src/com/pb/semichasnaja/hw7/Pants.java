@@ -7,11 +7,17 @@ public class Pants extends Clothes implements ManClothes, WomenClothes {
 
     @Override
     public void dressMan() {
-        System.out.println("Брюки мужские: " + color + ", размер: "+ size + ", цена: " + price + " грн.");
+        System.out.print("Брюки мужские: " + color + ", размер: "+ size);
+        size.getInfoSize();
+        System.out.print(", цена: " + price + " грн.");
+        System.out.println();
     }
 
     @Override
     public void dressWomen() {
-        System.out.println("Брюки женские: " + color + ", размер: "+ size + ", цена: " + price + " грн.");
+        System.out.print("Брюки женские: " + color + ", размер: "+ size);
+        size.getInfoSize();
+        System.out.print(", цена: " + price + " грн.");
+        System.out.println();
     }
 }

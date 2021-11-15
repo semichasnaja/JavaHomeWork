@@ -1,11 +1,11 @@
 package com.pb.semichasnaja.hw7;
 
 public enum Size {
-    XXS ("Детский размер",32),
-    XS ("Взрослый размер",34),
-    S ("Взрослый размер",36),
-    M ("Взрослый размер",38),
-    L ("Взрослый размер",40);
+    XXS("Детский размер", 32),
+    XS("Взрослый размер", 34),
+    S("Взрослый размер", 36),
+    M("Взрослый размер", 38),
+    L("Взрослый размер", 40);
 
     private String description;
     private int euroSize;
@@ -21,5 +21,9 @@ public enum Size {
 
     public int getEuroSize() {
         return euroSize;
+    }
+
+    public void getInfoSize() {
+        System.out.print(" (" + description + ", " + euroSize + ")");
     }
 }
