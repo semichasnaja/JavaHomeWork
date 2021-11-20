@@ -37,12 +37,4 @@ public class Auth {
         }
         System.out.println("Вход выполнен");
     }
-
-
-
-
-
-
-
-
 }
