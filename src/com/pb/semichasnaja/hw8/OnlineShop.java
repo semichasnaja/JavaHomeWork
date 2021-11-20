@@ -22,14 +22,14 @@ public class OnlineShop {
         }
 
         System.out.println("Выполните вход на сайт");
-        System.out.print("Введите логин: ");
-        String loginNew = in.next();
-        System.out.print("Введите пароль: ");
-        String passwordNew = in.next();
-        try {
-            auth1.signIn(loginNew, passwordNew);
-        } catch (WrongLoginException ex3) {
-            System.out.println(ex3.getMessage());
-        }
+            System.out.print("Введите логин: ");
+            String loginNew = in.next();
+            System.out.print("Введите пароль: ");
+            String passwordNew = in.next();
+            try {
+                auth1.signIn(loginNew, passwordNew);
+            } catch (WrongLoginException ex3) {
+                System.out.println(ex3.getMessage());
+            }
     }
 }
