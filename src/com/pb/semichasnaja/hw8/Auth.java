@@ -33,7 +33,7 @@ public class Auth {
             throw new WrongLoginException("Неправильный логин");
         }
         if (!password.equals(this.password)) {
-            throw new WrongLoginException("Неправильный пароль");
+            throw new WrongLoginException ("Неправильный пароль");
         }
         System.out.println("Вход выполнен");
     }
